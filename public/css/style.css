@@ -41,9 +41,6 @@ nav {
     justify-content: space-between;
     padding: 15px 5%;
     align-items: center;
-    /* background: #1a1a1a; */
-    /* top:0;
-    position: fixed; */
     width: 100%;
     z-index: 1111;
 }
@@ -108,6 +105,7 @@ ul li a.active {
         background-color: transparent;
         background-image: none;
     }
+    
 
     ul {
         position: absolute;
@@ -140,6 +138,7 @@ ul li a.active {
     #checkbox:checked~ul {
         display: block;
     }
+
 }
 
 
@@ -149,7 +148,6 @@ ul li a.active {
     flex-direction: column;
     width: 100%;
     display: flex;
-    /* background: rgba(22, 9, 3, 0.7); */
     align-items: center;
     top: 25%;
     height: 100vh;
@@ -184,11 +182,14 @@ ul li a.active {
 .parent-cards{
     width: 100%;
     height:auto;
+    overflow: hidden;
 }
 
 .cards{
     width: 100%;
     padding: 20px;
+    transform: translateX(100%);
+    transition: all 0.5s ease;
 }
 
 .cards img{
@@ -206,6 +207,8 @@ ul li a.active {
 .cardstwo{
     width: 100%;
     padding: 20px;
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
 }
 
 .cardstwo img{
@@ -218,7 +221,9 @@ ul li a.active {
 .cardstwo p{
     text-align: justify;
     margin-left: 50px;
+
 }
+
 
 @media screen and (max-width: 768px){
     .cards{
@@ -317,8 +322,8 @@ ul li a.active {
     cursor: pointer;
     transition: all 0.4s linear;
     z-index: 1000;
-    background-color: rgba(0, 0, 0, 0.5);
     color:gray;
+    height: 100%;
 }
 
 .slide-btn:hover {
@@ -563,7 +568,7 @@ textarea {
     padding: 7px 35px;
     border-radius: 60px;
     display: inline-block;
-    background-color: #4b8cfb;
+    background-color: #0075ff;
     color: white;
     font-size: 18px;
     cursor: pointer;
@@ -576,9 +581,7 @@ textarea {
 }
 
 .submit-btn:hover {
-    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
-              0 1px 1px 0 rgba(0,0,0,0.09);
-    background-color: #29539b;
+    background-color: #3c97ff;
 }
 
 @media (max-width: 768px) {
@@ -624,25 +627,24 @@ section  img {
 }
 
 .contact-content p::after {
-    background: white;
-    bottom: -30px;
-    content: "";
-    height: 1px;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%);
-    width: 80%;
+    display: none;
 }
 
+
+
 .contact-content h6 {
-    /* color: #8b9199; */
     font-size: 15px;
     font-weight: 400;
     margin-bottom: 10px;
 }
 
+.contact{
+    display: inline-grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
 .contact-content span {
-    /* color: #353c47; */
     margin: 0 10px;
 }
 
@@ -697,3 +699,26 @@ footer p {
 footer img {
     width: 44px;
 }
+
+
+
+/* FOOTER RESPONSIVE */
+@media screen and (max-width: 768px) {
+
+    .contact-content p::after {
+        display: block;
+        background: white;
+        bottom: -30px;
+        content: "";
+        height: 1px;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%);
+        width: 80%;
+    }
+    
+    .contact {
+        display: block;
+    }
+}
+    

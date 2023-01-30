@@ -23,17 +23,12 @@ app.listen(app.get("port"), function () {
 });
 
 app.get("/faq", function (req, res) {
-  // let data = {
-  //     title: 'Simple'
-  // }
-  // res.render('faq', {data: data})
   let myrender;
 
   mysqldb.query("SELECT * FROM questions", (error, results) => {
     if (error) {
       throw error;
     } else {
-      // res.json(results);
       let data = {
         one: results[0].question,
         two: results[1].question,
@@ -43,9 +38,6 @@ app.get("/faq", function (req, res) {
       };
 
       res.render("data", { data: data });
-      //console.log(results[0].question);
-      //console.log(JSON.stringify(results))
-      //console.log(res);
     }
   });
 })

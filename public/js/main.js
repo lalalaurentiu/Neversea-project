@@ -1,3 +1,22 @@
+const cards = document.querySelectorAll(".cards");
+const cardstwo = document.querySelectorAll(".cardstwo");
+
+window.addEventListener("load", (e) => {
+  [...cards, ...cardstwo].forEach((card) => {
+    if (window.pageYOffset > card.offsetTop - window.innerHeight + 100) {
+      card.style.transform = "translateX(0)";
+    }
+  });
+});
+
+window.addEventListener("scroll", (e) => {
+  [...cards, ...cardstwo].forEach((card) => {
+    if (window.pageYOffset > card.offsetTop - window.innerHeight + 100) {
+      card.style.transform = "translateX(0)";
+    }
+  });
+});
+
 const nav = document.querySelector("#nav");
 let headerMenu = document.querySelector("#checkbox");
 
@@ -17,7 +36,6 @@ if (url == "/faq") {
 } else if (url == "/contact") {
   header.style.backgroundImage = "url('/img/contact.jpg')";
 }
-
 
 let slides = document.querySelectorAll(".slide");
 let thumbnails = document.querySelectorAll(".thumbnail");
