@@ -23,7 +23,6 @@ app.listen(app.get("port"), function () {
 });
 
 app.get("/faq", function (req, res) {
-  let myrender;
 
   mysqldb.query("SELECT * FROM questions", (error, results) => {
     if (error) {
@@ -33,8 +32,6 @@ app.get("/faq", function (req, res) {
         one: results[0].question,
         two: results[1].question,
         thr: results[2].question,
-        fou: results[3].question,
-        fiv: results[4].question,
       };
 
       res.render("data", { data: data });

@@ -19,7 +19,7 @@ body {
     scroll-behavior: smooth;
 }
 
-p{
+p, ol{
     font-family: Uchen;
 }
 
@@ -150,7 +150,6 @@ ul li a.active {
     display: flex;
     align-items: center;
     top: 25%;
-    height: 100vh;
     font-family: Mochiy Pop One;
     line-height: 50px;
     font-style: italic;
@@ -464,7 +463,7 @@ details {
     color: #f4f4f6;
   }
   
-  details > p {
+  details > ol {
     max-width: 650px;
     font-size: 18px;
     line-height: 155%;

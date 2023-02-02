@@ -8,11 +8,9 @@ CREATE TABLE questions(
 );
 
 INSERT INTO questions(id, question) VALUES
-('1', 'Why is Raycast free for personal use?'),
-('2', 'When is Raycast for teams available?'),
-('3', 'How many seats do I get in a Team plan?'),
-('4', 'Can I have personal Extensions and Team Extensions?'),
-('5', 'How much will Team features cost?');
+('1', 'What are the basic precautions I can take to protect myself from COVID-19?'),
+('2', 'When What should I do if I think I have been exposed to COVID-19?'),
+('3', 'How can I prepare in case I get sick with COVID-19?');
 
 SELECT * FROM questions;
 

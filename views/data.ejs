@@ -1,137 +1,131 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css">
-    <title>NEVERSEA - FAQ</title>
-</head>
-<body>
-    
 
-<header>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>NEVERSEA - FAQ</title>
+</head>
+
+<body>
+  <header>
     <nav id="nav">
-        <div class="logo">NEVERSEA</div>
-        <input type="checkbox" id="checkbox">
-        <label for="checkbox" id="icon">
-            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-        </label>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/faq">FAQ</a></li>
-            <li><a href="/contact">Contact</a></li>
-        </ul>
+      <div class="logo">NEVERSEA</div>
+      <input type="checkbox" id="checkbox">
+      <label for="checkbox" id="icon">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </label>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
     </nav>
     <div class="big-title">
       <h1>AUTUMN MUSIC FESTIVAL</h1>
       <h2>1 - 31 OCTOBER</h2>
-  </div>
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button> 
-</header><br>
-
-
-
-<div class="faq-section">
-  
-      <h1>FAQs</h1> 
-      <p>Answers to the most frequently asked questions.</p><br><br>
-    
-    <details>
-      <summary>
-        <h4><%= data.one %></h4>
-        <span class="material-symbols-outlined"><i class="fa-solid fa-angle-down"></i></span>  
-      </summary>
-      <p>We think of Raycast as a productivity layer that everybody should use to get work done faster. To make it accessible, we don't charge for the individual plan. The plan covers all built-in extensions, such as Clipboard History, Calendar or Window Management and provides access to all public extensions built by our community.</p>
-    </details>
-    
-    <hr>
-    
-    <details>
-      <summary>
-        <h4><%= data.two %></h4>
-        <span class="material-symbols-outlined"><i class="fa-solid fa-angle-down"></i></span>  
-      </summary>
-      <p>We don't have an exact date right now, but we will launch Raycast for Teams in 2022. You can sign up to get early access above, and be the first to hear when we're launching it.</p>
-    </details> 
-    
-    <hr>
-    
-    <details>
-      <summary>
-        <h4><%= data.thr %></h4>
-        <span class="material-symbols-outlined"><i class="fa-solid fa-angle-down"></i></span>  
-      </summary>
-      <p>We don't have an exact date right now, but we will launch Raycast for Teams in 2022. You can sign up to get early access above, and be the first to hear when we're launching it.</p>
-    </details>
-    
-    <hr>
-    
-    <details>
-      <summary>
-        <h4><%= data.fou %></h4>
-        <span class="material-symbols-outlined"><i class="fa-solid fa-angle-down"></i></span>  
-      </summary>
-      <p>Yes, you can create personal Extensions that are personalized to you, and speed up your productivity, and have team Extensions that can be shared around in your organization for everyone to use. Team Extensions will be available in the Store command, behind a filter for your Team. This is where all of your Team Extensions will live, and where you can install them.</p>
-    </details>
-    
-    <hr>
-    
-    <details>
-      <summary>
-        <h4><%= data.fiv %></h4>
-        <span class="material-symbols-outlined"><i class="fa-solid fa-angle-down"></i></span>  
-      </summary>
-      <p>Team features will cost $10 per user, per month.</p>
-    </details>
-    
-  </div>
-  
-  
-
-
-<section class="contact-area" id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 offset-lg-3">
-                <div class="contact-content text-center">
-                  <div class="contact">
-                    <div>
-                        <h2>NEVERSEA</h2>
-                        <h3>Enjoy Party with US</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut
-                            labore et dolore magna aliqua. Quis ipsum </p>
-                        <div class="hr"></div>
-                    </div>
-                    <div>
-                        <h6>1120 Lorem ipsum dolor sit amet, KC 179050, Chandigarh.</h6>
-                        <h6>Support</h6>
-                        <h6>+01 2345 6789 12<span>|</span>+01 2345 6789 12</h6>
-                        <h6>summerfestival2022@contact.com</h6>
-                    </div>
-                </div>
-                    <div class="contact-social">
-                        <ul>
-                            <li><a class="hover-target" href=""><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="hover-target" href=""><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a class="hover-target" href=""><i class="fab fa-github"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
-</section>
-<footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+  </header><br>
+
+  <div class="faq-section">
+    <h1>FAQs</h1>
+    <p>Answers to the most frequently asked questions.</p><br><br>
+
+    <details>
+      <summary>
+        <h4>
+          <%= data.one %>
+        </h4>
+        <span class="material-symbols-outlined"><i class="fa-solid fa-angle-down"></i></span>
+      </summary>
+      <ol>
+        <li>Wash your hands frequently with soap and water for at least 20 seconds.</li>
+        <li>Wear a mask when in public spaces, especially when social distancing is not possible.</li>
+        <li>Avoid touching your face, especially your eyes, nose, and mouth.</li>
+        <li>Practice social distancing by staying at least 6 feet away from others..</li>
+      </ol>
+    </details>
+
+    <hr>
+
+    <details>
+      <summary>
+        <h4>
+          <%= data.two %>
+        </h4>
+        <span class="material-symbols-outlined"><i class="fa-solid fa-angle-down"></i></span>
+      </summary>
+      <ol>
+        <li>Stay home and self-quarantine for 14 days from the last time you were exposed to the virus.</li>
+        <li>Monitor your symptoms and seek medical attention if you experience fever, cough, or shortness of breath.
+        </li>
+        <li> Follow the advice of your healthcare provider and local health department.</li>
+      </ol>
+    </details>
+
+    <hr>
+
+    <details>
+      <summary>
+        <h4>
+          <%= data.thr %>
+        </h4>
+        <span class="material-symbols-outlined"><i class="fa-solid fa-angle-down"></i></span>
+      </summary>
+      <ol>
+        <li>Stock up on essentials such as non-perishable food, water, and medication.</li>
+        <li>Make a plan for who will care for you and your family if you get sick.</li>
+        <li>Consider enrolling in telemedicine services so you can consult with a doctor from home.</li>
+      </ol>
+    </details>
+  </div>
+
+  <section class="contact-area" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="contact-content text-center">
+            <div class="contact">
+              <div>
+                <h2>NEVERSEA</h2>
+                <h3>Enjoy Party with US</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut
+                  labore et dolore magna aliqua. Quis ipsum </p>
+                <div class="hr"></div>
+              </div>
+              <div>
+                <h6>1120 Lorem ipsum dolor sit amet, KC 179050, Chandigarh.</h6>
+                <h6>Support</h6>
+                <h6>+01 2345 6789 12<span>|</span>+01 2345 6789 12</h6>
+                <h6>neversea@contact.com</h6>
+              </div>
+            </div>
+            <div class="contact-social">
+              <ul>
+                <li><a class="hover-target" href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a class="hover-target" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a class="hover-target" href=""><i class="fab fa-github"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
     <p>Copyright &copy; 2022 NEVERSEA All Rights Reserved.</p>
-</footer>
+  </footer>
 
-
-
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
